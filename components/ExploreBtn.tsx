@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-const ExploredBtn = () => {
+const ExploreBtn = () => {
   return (
     <button
       type="button"
@@ -11,17 +11,16 @@ const ExploredBtn = () => {
       onClick={() => console.log("CLICK")}
     >
       <a href="#events">
-        Explored Events
+        Explore Events
         <Image
           src="/icons/arrow-down.svg"
           alt="arrow-down"
           width={24}
           height={24}
-          className="ml-2"
         />
       </a>
     </button>
   );
 };
 
-export default ExploredBtn;
+export default ExploreBtn;

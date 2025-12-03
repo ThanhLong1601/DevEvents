@@ -1,16 +1,16 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 
 interface Props {
-  image: string;
   title: string;
+  image: string;
   slug: string;
   location: string;
   date: string;
   time: string;
 }
 
-const EventCard = ({ image, title, slug, location, date, time }: Props) => {
+const EventCard = ({ title, image, slug, location, date, time }: Props) => {
   return (
     <Link href={`/events/${slug}`} id="event-card">
       <Image
